@@ -4,6 +4,9 @@ This repository contains a minimal, non-operational ransomware prototype. The co
 ⚠️ **Disclaimer:**  
 This repository is intended **for educational use only**.
 
+---
+
+## Brief explanation
 The flow begins with a symmetric key, usually something like an AES key, generated locally on the victim machine. Symmetric cryptography relies on a single secret used both to encrypt and decrypt, which makes it fast and well-suited for transforming large volumes of data. 
 
 The program scans the chosen directory and applies the symmetric algorithm to each target file, replacing the readable content with its encrypted form. This is the stage that illustrates the heart of ransomware logic: transforming accessible data into unreadable ciphertext.
